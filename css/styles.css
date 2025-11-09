@@ -290,7 +290,7 @@ height: 104px;
   gap: 24px;
   width: 232px;
   height: 40px;
-  
+  justify-content: center; 
 }
 
 .social-list {
@@ -393,13 +393,12 @@ height: 104px;
     background-color: #2e2f42;
     padding: 100px 0;
     display: flex;
-    gap: 120px;
+    margin-right: 120px;
     align-items: baseline
   }
 
   .footer-container {
     flex-direction: column;
-    margin-right: 120px;
   }
 
   .footer-logo {
