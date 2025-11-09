@@ -293,6 +293,11 @@ height: 104px;
   height: 40px;
 }
 
+.social-links-item {
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-list {
   width: 40px;
   height: 40px;
@@ -301,11 +306,11 @@ height: 104px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  
 }
 
 .icon-soc {
-  fill:#fff
-  
+  fill:#f4f4fd;
 }
 
 .social-list:hover,
