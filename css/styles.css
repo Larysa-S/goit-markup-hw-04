@@ -24,6 +24,7 @@ section {
   padding: 120px 0;
 }
     /*common*/
+
  .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -45,23 +46,23 @@ section {
 
   .page-header {
    border-bottom: 1px solid #e7e9fc;
-   
   }
 
   .header-container {
     display: flex;
     align-items: center;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
   }
 
   .header-nav {
     display: flex;
     align-items: center;
   }
+
   .header-nav-list{
     display: flex;
     align-items: center;
-    gap: 40px;
-    
+    gap: 40px; 
   }
 
   .contacts-nav {
@@ -75,16 +76,75 @@ section {
    padding: 24px 0
   }
 
+    .header-logo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #4d5ae5;
+      margin-bottom: 8px;
+    }
+  
+    .header-logo .logo-part {
+      color: #2e2f42;
+    }
+  
+    .nav-link {
+      padding: 24px 0;
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .nav-link.current {
+     position: relative;     
+    }
+
+    .nav-link.current::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -1px;
+      background-color: #404bbf;
+      border-radius: 2px;
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus,
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.current {
+      color: #404bbf;
+    }
+    
+    .contacts {
+      font-style: normal;
+      margin-left: auto;
+    }
+  
+    .contacts-link {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #434455;
+      padding: 24px 0;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
  /*region solutions*/
 
  .container-solutions {
   justify-content: center;
   flex-direction: column;
- }
-
-.main-title-section {
-padding: 188px 0;
-}
+   }
 
   h1 {
     font-weight: 700;
@@ -98,11 +158,13 @@ padding: 188px 0;
   }
 
   .main-title-section {
-  background-color: #2e2f42;
- }
+    padding: 188px 0;
+    background-image: url(../images/people-office.jpg);
+    background-color: #(46, 46, 66, 0.7);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
- .our-team {
-  background-color: #F4F4FD;
  }
 
   button {
@@ -155,6 +217,17 @@ padding: 188px 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.solution-box {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+}
 
   h2 {
       font-weight: 700;
@@ -182,10 +255,14 @@ padding: 188px 0;
 
 .our-team-item {
   width: 264px;
-  height: 380px;
+  height: 428px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0px 0px 4px 4px;
+}
+
+.our-team {
+  background-color: #F4F4FD;
 }
 
 .our-team-header {
@@ -201,6 +278,34 @@ text-align: center;
   margin-bottom: 8px
 }
 
+.team-memeber-social-links {
+  margin: 8px 16px 32px;
+  display: flex;
+  gap: 24px;
+  width: 232px;
+  height: 40px;
+}
+
+.social-list {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-soc {
+  fill:#fff
+  
+}
+
+.social-list:hover,
+.social-list:focus {
+  background-color: #404bbf;
+}
+
 /*region portfolio*/
 
 .our-portfolio-nav {
@@ -213,15 +318,18 @@ text-align: center;
 }
 
 .our-portfolio {
-margin-bottom: 72px;
+ margin-bottom: 72px;
 }
 
 .our-portfolio-nav-item {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: column;
-  
+  flex-direction: column; 
+  position: relative;
+  width: 360px;
+  height: 420;
+  overflow: hidden;
 }
 
 .portfolio-container {
@@ -236,70 +344,48 @@ margin-bottom: 72px;
   padding-inline: 16px;
   width: 360px;
   height: 120px;
+  
 }
+
+.portfolio-container:hover,
+.portfolio-container:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 
+  rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+ }
 
 .our-portfolio-item-name {
   margin-bottom: 8px
 }
 
-.header-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-    margin-bottom: 8px;
+.our-portfolio-overlay {
+  background-color: #4d5ae5;
+  padding: 40px 32px;
+  position: absolute;
+  width: 360px;
+  height: 300px;
+  overflow: auto;
+  transform: translateY(0%);
+
+    
+}
+.our-portfolio-nav-item:hover .our-portfolio-overlay {
+  transform: translateY(-100%);
 }
 
-  .header-logo .logo-part {
-    color: #2e2f42;
-  }
-
-  .nav-link {
-    padding: 24px 0;
-    display: block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-  }
-
-  .nav-link:hover,
-  .nav-link:focus {
-    color: #404bbf;
-  }
-
-  .contacts {
-    font-style: normal;
-    margin-left: auto;
-  }
-
-  .contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    padding: 24px 0;
-  }
-
-  .contacts-link:hover,
-  .contacts-link:focus {
-    color: #404bbf;
-  }
-  
-  .our-team-item {
-    background-color: #FFFFFF;
-  }
+.text-overlay {
+  color: #f4f4fd;
+}
 
   /*footer*/
 
   .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
-    gap: 8px;
+    display: flex;
+    gap: 120px; 
+  }
+
+  .footer-container {
     flex-direction: column;
   }
 
@@ -325,8 +411,26 @@ margin-bottom: 72px;
    display: block;
    width: 262px;
    height: 72px;
-   
   }
 
- 
-  
+  .footer-social {
+    color: #f4f4fd;
+  }
+
+ .footer-container-social {
+  width: 208px;
+  height: 80px;
+  flex-direction: column;
+ }
+
+.footer-social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+} 
+
+.footer-social-list-item:hover,
+.footer-social-list-item:focus {
+  background-color: #31d0aa;;
+} 
+
