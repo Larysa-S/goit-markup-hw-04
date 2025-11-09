@@ -186,7 +186,6 @@ section {
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
    padding-block: 16px;
    padding-inline: 32px;
-   
    transition-property: background-color;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -295,7 +294,6 @@ height: 104px;
 
 .social-links-item {
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list {
@@ -304,9 +302,9 @@ height: 104px;
   background-color: #4d5ae5;
   display: flex;
   border-radius: 50%;
-  align-items: center;
   justify-content: center;
-  
+  transition-property: background-color;
+  transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-soc {
