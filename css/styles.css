@@ -290,7 +290,7 @@ height: 104px;
   gap: 24px;
   width: 232px;
   height: 40px;
-  justify-content: center;
+  
 }
 
 .social-list {
@@ -300,7 +300,7 @@ height: 104px;
   display: flex;
   border-radius: 50%;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   transition-property: background-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -367,8 +367,7 @@ height: 104px;
   height: 300px;
   overflow: auto;
   position: relative;
-  overflow: hidden;
-    
+  overflow: hidden;   
 }
 
 .text-overlay {
@@ -383,6 +382,11 @@ height: 104px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.text-overlay:hover,
+.text-overlay:focus {
+  transform: translateY(0%)
+}
+
   /*footer*/
 
   .page-footer {
@@ -395,6 +399,7 @@ height: 104px;
 
   .footer-container {
     flex-direction: column;
+    margin-right: 120px;
   }
 
   .footer-logo {
