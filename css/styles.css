@@ -192,8 +192,7 @@ section {
  }
 
   button:hover, button:focus {
-    background-color: #404BBF;
-    
+    background-color: #404BBF;    
  } 
  
  /*region solutions list*/
@@ -235,25 +234,25 @@ section {
   background: #f4f4fd;
 }
 
-  h2 {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.11;
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
-      text-align: center;
-      color: #2e2f42;
-  }
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
 
-  h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-  }
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 
-  /*region our team*/
+/*region our team*/
 .our-team-list {
   display: flex;
   gap: 24px;
@@ -278,6 +277,8 @@ section {
 .our-team-member-info-section {
 padding: 32px 0;
 text-align: center;
+width: 232px;
+height: 104px;
 }
 
 .our-team-member {
@@ -388,11 +389,13 @@ text-align: center;
     background-color: #2e2f42;
     padding: 100px 0;
     display: flex;
-    gap: 120px; 
+    gap: 120px;
+    align-items: baseline
   }
 
   .footer-container {
     flex-direction: column;
+    margin-right: 120px
   }
 
   .footer-logo {
@@ -420,7 +423,9 @@ text-align: center;
   }
 
   .footer-social {
-    color: #f4f4fd;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 16px;
   }
 
  .footer-container-social {
@@ -432,7 +437,6 @@ text-align: center;
 .footer-social-links {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 } 
 
 .footer-social-list-item:hover,
@@ -440,3 +444,6 @@ text-align: center;
   background-color: #31d0aa;;
 } 
 
+.con-soc {
+  fill: #f4f4fd;
+}
