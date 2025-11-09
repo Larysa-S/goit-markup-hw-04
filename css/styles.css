@@ -290,9 +290,6 @@ height: 104px;
   gap: 24px;
   width: 232px;
   height: 40px;
-}
-
-.social-links-item {
   justify-content: center;
 }
 
@@ -302,17 +299,17 @@ height: 104px;
   background-color: #4d5ae5;
   display: flex;
   border-radius: 50%;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
   transition-property: background-color;
-  transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-soc {
   fill:#f4f4fd;
 }
 
-.social-list:hover,
-.social-list:focus {
+.social-list:hover, .social-list:focus {
   background-color: #404bbf;
 }
 
