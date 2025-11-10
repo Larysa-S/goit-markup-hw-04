@@ -337,7 +337,13 @@ height: 104px;
   width: 360px;
   height: 420;
   overflow: hidden;
+  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.our-portfolio-nav-item:hover, .our-portfolio-nav-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+ }
+
 
 .portfolio-container {
   align-items: flex-start;
@@ -350,13 +356,8 @@ height: 104px;
   padding-block: 32px;
   padding-inline: 16px;
   width: 360px;
-  height: 120px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 120px;  
 }
-
-.portfolio-container:hover, .portfolio-container:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
- }
 
 .our-portfolio-item-name {
   margin-bottom: 8px
@@ -393,12 +394,11 @@ height: 104px;
     background-color: #2e2f42;
     padding: 100px 0;
     display: flex;
-    margin-right: 120px;
     align-items: baseline
   }
 
   .footer-container {
-    flex-direction: column;
+    flex-direction: column;      
   }
 
   .footer-logo {
@@ -431,9 +431,9 @@ height: 104px;
   }
 
  .footer-container-social {
-  width: 208px;
-  height: 80px;
-  flex-direction: column;
+   width: 208px;
+   height: 80px;
+   flex-direction: column;
  }
 
 .footer-social-links {
